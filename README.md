@@ -11,7 +11,7 @@ git clone https://github.com/sceptic30/docker-daemon-secure.git
 cd docker-daemon-secure
 sudo ./docker-daemon-secure example.com your_username
 ```
-You don't need to run ```usermod -aG docker {user}``` to add your user to the docker group after you set this up, because your user will be already be eligable to control the docker daemon via the certificates.
+You don't need to run ```usermod -aG docker {user}``` to add your user to the docker group after you set this up, because your user will be already be able to control the docker daemon via the certificates.
 
 # Known Bugs
 Currently, is not possible to use docker-compose with secure daemon because of a bug.
