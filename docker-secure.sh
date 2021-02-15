@@ -45,7 +45,6 @@ echo "Specified IP addresses to allow connections FROM, and extended key usage"
 echo "subjectAltName = DNS:$HOST,IP:${SERVER_PUBLIC_IP},IP:127.0.0.1" >> /root/.docker/extfile.cnf
 echo "extendedKeyUsage = serverAuth" >> /root/.docker/extfile.cnf
 
-
 echo "Signing public key with our CA"
 openssl x509 -req -days 3650 -in server.csr -CA ca.pem -CAkey ca-key.pem -CAcreateserial -out server-cert.pem -extfile /root/.docker/extfile.cnf
 
