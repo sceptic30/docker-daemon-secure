@@ -9,5 +9,5 @@ The script accepts 2 arguments:
 ```bash
 git clone https://github.com/sceptic30/docker-daemon-secure.git
 cd docker-daemon-secure
-./docker-daemon-secure example.com your_username
+sudo ./docker-daemon-secure example.com your_username
 ```
