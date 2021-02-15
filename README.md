@@ -13,6 +13,6 @@ sudo ./docker-daemon-secure example.com your_username
 ```
 You don't need to run ```usermod -aG docker {user}``` to add your user to the docker group after you set this up, because your user will be already be eligable to control the docker daemon via the certificates.
 
-# Knows Bug
+# Known Bugs
 Currently, is not possible to use docker-compose with secure daemon because of a bug.
 Please see this issue https://github.com/docker/compose/issues/7675
